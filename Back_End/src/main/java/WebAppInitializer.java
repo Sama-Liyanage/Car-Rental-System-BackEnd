@@ -1,5 +1,3 @@
-import lk.easyrental.config.WebAppConfig;
-import lk.easyrental.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
