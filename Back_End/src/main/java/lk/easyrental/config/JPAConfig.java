@@ -24,5 +24,5 @@ public class JPAConfig {
         bean.setPackagesToScan("lk.easyrental.entity");
         return bean;
     }
-    
+
 }
