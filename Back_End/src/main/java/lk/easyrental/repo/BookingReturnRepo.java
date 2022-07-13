@@ -5,4 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface BookingReturnRepo extends JpaRepository<BookingReturn,String> {
 
+
 }
