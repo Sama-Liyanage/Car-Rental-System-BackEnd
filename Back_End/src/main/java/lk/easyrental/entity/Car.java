@@ -42,5 +42,5 @@ public class Car {
     private List<Booking> bookings = new ArrayList<Booking>();
 
     @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
-    private List<Maintaince> maintainance = new ArrayList<>();
+    private List<Maintenance> maintenances = new ArrayList<>();
 }

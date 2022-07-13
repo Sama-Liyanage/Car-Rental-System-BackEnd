@@ -9,8 +9,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @Data
 @ToString
-public class MaintainceDTO {
-    private String maintainceID;
+public class MaintenanceDTO {
+    private String maintenanceID;
     private String date;
     private String details;
     private CarDTO car;

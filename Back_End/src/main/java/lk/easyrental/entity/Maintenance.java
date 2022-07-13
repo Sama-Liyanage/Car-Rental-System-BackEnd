@@ -13,9 +13,9 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @Data
 @Entity
-public class Maintaince {
+public class Maintenance {
     @Id
-    private String maintainceID;
+    private String maintenanceID;
     private String date;
     private String details;
 
