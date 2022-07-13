@@ -44,17 +44,18 @@ public class JPAConfig {
     }
 
     @Bean
-    public JpaVendorAdapter vendorAdapter() {
-        HibernateJpaVendorAdapter va = new HibernateJpaVendorAdapter();
-        va.setDatabasePlatform("org.hibernate.dialect.MySQL8Dialect");
-        va.setDatabase(Database.MYSQL);
-        va.setGenerateDdl(true);
-        va.setShowSql(true);
-        return va;
+    public JpaVendorAdapter jpaVendorAdapter() {
+        HibernateJpaVendorAdapter vendor = new HibernateJpaVendorAdapter();
+        vendor.setDatabasePlatform(env.getRequiredProperty("my.app.dialect"));
+        vendor.setDatabase(Database.MYSQL);
+        vendor.setShowSql(true);
+        vendor.setGenerateDdl(true);
+        return vendor;
     }
 
     @Bean
-    public PlatformTransactionManager transactionManager(EntityManagerFactory emf){
+    public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         return new JpaTransactionManager(emf);
     }
+
 }
