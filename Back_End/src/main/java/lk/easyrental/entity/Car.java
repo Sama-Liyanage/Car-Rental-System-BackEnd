@@ -40,7 +40,7 @@ public class Car {
 
     @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
     private List<Booking> bookings = new ArrayList<Booking>();
-//
+
 //    @OneToMany(mappedBy = "car", cascade = CascadeType.ALL)
-//    private List<Maintenance> maintenances = new ArrayList<>();
+//    private List<Maintaince> maintenances = new ArrayList<>();
 }
