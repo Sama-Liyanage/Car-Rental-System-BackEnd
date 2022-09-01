@@ -1,2 +1,10 @@
 # Car-Rental-System
- Advance-API-Development module's course work is here
+## Software solution for a car rental system 
+
+BackEnd
+- Spring MVC
+- Spring Data JPA
+- MySQL 
+- Lombok
+- ModelMapper 
+- Jackson
